@@ -1,0 +1,32 @@
+.page {
+    flex: 1;
+    flex-flow: column;
+    align-items: center;
+}
+.header {
+    width: 98%;
+    border-bottom: 1px #ccc solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-weight: lighter;
+    letter-spacing: .1px;
+}
+
+.menu {
+    list-style: none;
+}
+.menu li {
+    display: inline;
+    padding: 8px;
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: .1px;
+}
+
+.footer {
+    border-top: 1px #ccc solid;
+    width: 98%;
+}
