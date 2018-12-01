@@ -1,0 +1,13 @@
+{
+    "posts": [
+        {
+            "badge": 0,
+            "date": "11/30/2018",
+            "description": "This is a test blog post. It is testing the markdown system for my new blog!",
+            "filepath": "/contents/1.md" ,
+            "id": 1,
+            "thumbnail": null,
+            "title": "Hello World!"
+        }
+    ]
+}

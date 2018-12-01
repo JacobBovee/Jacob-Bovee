@@ -1,0 +1,47 @@
+.post {
+    flex: 1;
+    border-bottom: .5px rgba(0, 0, 0, 0.2) solid;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    flex-flow: row;
+    cursor: pointer;
+}
+
+.post .info {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.post .info ul {
+    list-style: none;
+}
+.post .info ul:nth-child(1) {
+    font-weight: lighter;
+    font-size: .8em;
+}
+
+.post .title-description {
+    flex: 4;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.post .title-description h6 {
+    font-size: 1.6em;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.post .title-description p {
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0;
+    max-width: 50%;
+}
+
+
+.post .thumbnail {
+    flex: 4;
+    align-items: center;
+}

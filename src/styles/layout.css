@@ -30,3 +30,8 @@
     border-top: 1px #ccc solid;
     width: 98%;
 }
+
+.container {
+    flex-flow: column;
+    width: 80%;
+}
