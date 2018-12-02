@@ -1,8 +1,9 @@
 html, body, #root {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'source sans pro';
   height: 100%;
+  color: hsl(223, 9%, 25%);
 }
 
 div {

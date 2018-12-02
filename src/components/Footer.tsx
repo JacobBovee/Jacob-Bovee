@@ -1,9 +1,15 @@
 import * as React from 'react'
 
-export default class Footer extends React.Component {
+interface IFooterProps {
+    className?: string
+}
+
+export default class Footer extends React.Component<IFooterProps> {
     public render() {
+        const { className } = this.props
+
         return (
-            <div className='footer'>
+            <div className={`footer ${className}`}>
                 <p>Copyright</p>
             </div>
         )

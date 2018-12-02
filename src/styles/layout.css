@@ -4,19 +4,28 @@
     align-items: center;
 }
 .header {
-    width: 98%;
+    width: 100%;
     border-bottom: 1px #ccc solid;
     justify-content: center;
     align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .header h1 {
-    font-weight: lighter;
+    font-weight: 500;
     letter-spacing: .1px;
+    font-size: 1.3em;
+    flex: 1;
+    text-align: center;
+    cursor: default;
 }
 
 .menu {
     list-style: none;
+    flex: 1;
 }
 .menu li {
     display: inline;
@@ -28,10 +37,17 @@
 
 .footer {
     border-top: 1px #ccc solid;
-    width: 98%;
+    width: 100%;
+    background-color: #222;
+}
+
+.bottom-footer {
+    bottom: 0;
+    position: absolute;
 }
 
 .container {
     flex-flow: column;
-    width: 80%;
+    width: 90%;
+    padding-top: 35px;
 }

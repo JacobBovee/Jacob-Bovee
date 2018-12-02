@@ -6,7 +6,6 @@ export default class Menu extends React.Component {
             <ul className='menu'>
                 <li>Projects</li>
                 <li>Writings</li>
-                <li>About</li>
                 <li>Etc</li>
             </ul>
         )
