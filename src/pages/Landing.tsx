@@ -1,41 +1,54 @@
-import Post from '../components/Post'
-
-import Ghfs from '../ghfs'
-
-import Layout from '../layout'
-
 import * as React from 'react'
+import Menu from '../components/Menu'
 
-declare interface ILandingState {
-    posts?: object
-}
-
-export default class Landing extends React.Component<ILandingState> {
-    public state
-
-    constructor(props) {
-        super(props)
-        this.state = {
-            posts: [],   
-        }
-    }
-
-    public componentDidMount() {
-        Ghfs.getPosts()
-            .then(response => this.setState({ posts: response }))
-    }
+export default class Landing extends React.Component {
 
     public render() {
-        const { posts } = this.state
-
         return (
-            <Layout>
+            <div className='full'>
+                <div className='left-container' />
                 <div className='container'>
-                    {posts && posts.map(post =>
-                        <Post key={post.id} title={post.title} description={post.description} badge={post.badge} date={post.date} thumbnail={post.thumbnail} />
-                    )}
+                    <div className='info-block'>
+                        <div className='block-item'>
+                            Jacob Bovee
+                        </div>
+                        <div className='empty' />
+                        <div className='block-item'>
+                            Engineering
+                        </div>
+                    </div>
+                    <div className='name-block'>
+                        <h1 className='name'>JACOB B.</h1>
+                    </div>
+                    <div className='info-block'>
+                        <div className='block-item'>
+                            Writing
+                        </div>
+                        <div className='empty' />
+                        <div className='block-item'>
+                            Las Vegas, NV
+                        </div>
+                    </div>
+                    <div className='announcement-block'>
+                        <h2 className='announcement'>
+                            <p>IS WORKING</p>
+                            <p>ON</p>
+                            <p>SOMETHING BIG</p>
+                        </h2>
+                    </div>
+                    <div className='footer-block'>
+                        <div className='email-block'>
+                        <input placeholder='Email address...' />
+                        </div>
+                        <div className='empty' />
+                        <div className='submit-button'>
+                            Be notified
+                        </div>
+                    </div>
                 </div>
-            </Layout>
+                <div className='right-container' />
+                <Menu />
+            </div>
         )
     }
 }

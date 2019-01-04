@@ -6,8 +6,8 @@
 .header {
     width: 100%;
     border-bottom: 1px #ccc solid;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding-bottom: 15px;
     padding-top: 15px;
     background-color: #222;
@@ -30,9 +30,10 @@
 .menu li {
     display: inline;
     padding: 8px;
-    text-decoration: underline;
     cursor: pointer;
-    letter-spacing: .1px;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .footer {
@@ -44,10 +45,4 @@
 .bottom-footer {
     bottom: 0;
     position: absolute;
-}
-
-.container {
-    flex-flow: column;
-    width: 90%;
-    padding-top: 35px;
 }

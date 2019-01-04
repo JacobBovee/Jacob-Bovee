@@ -1,11 +1,144 @@
 html, body, #root {
   margin: 0;
   padding: 0;
-  font-family: 'source sans pro';
-  height: 100%;
-  color: hsl(223, 9%, 25%);
+  font-family: 'Staatliches';
+  height: calc(100% - 20px);
+  background-color: #D21E1E;
+  color: #000;
 }
 
 div {
   display: flex;
+}
+
+.full {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  flex-flow: row;
+}
+
+.left-container {
+  width: 20%;
+  height: 100%;
+}
+.right-container {
+  width: 20%;
+  height: 100%;
+}
+
+.name {
+  font-family: 'Monoton';
+  letter-spacing: 2;
+  font-size: 133px;
+  cursor: default;
+}
+
+.container {
+  flex-flow: column;
+  width: 60%;
+  align-items: center;
+  position: relative;
+}
+
+.info-block {
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+}
+.block-item {
+  width: 255px;
+  height: 60px;
+  background-color: #000;
+  color: #D21E1E;
+  font-size: 23px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  cursor: default;
+}
+.info-block .empty {
+  width: 144px;
+  cursor: default;
+}
+
+.name-block {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+}
+
+.announcement-block {
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+}
+.announcement {
+  font-size: 91px;
+  line-height: 30px;
+  letter-spacing: 7px;
+  cursor: default;
+}
+
+.footer-block {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-block {
+  width: 370px;
+  height: 40px;
+  align-items: center;
+  padding-left: 7px;
+  cursor: text;
+}
+
+.email-block input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: rgba(210, 30, 30, 1);
+  font-family: 'Staatliches';
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: #000;
+  padding-left: 7px;
+}
+
+.email-block input:hover {
+  background-color: #1e1e1e;
+}
+
+.email-block input:focus {
+  outline: none;
+  background-color: #1e1e1e;
+}
+.email-block input::placeholder {
+  color: rgba(210, 30, 30, 0.8);
+  font-family: 'Staatliches';
+  letter-spacing: 1px;
+}
+
+
+.submit-button {
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  color: #D21E1E;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.footer-block .empty {
+  width: 24px;
 }
