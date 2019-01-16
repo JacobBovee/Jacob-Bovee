@@ -33,6 +33,9 @@ div {
   font-size: 133px;
   cursor: default;
 }
+span.pad {
+  margin-left: 30px;
+}
 
 .container {
   flex-flow: column;
@@ -79,7 +82,7 @@ div {
   cursor: default;
 }
 .announcement {
-  font-size: 91px;
+  font-size: 95px;
   line-height: 30px;
   letter-spacing: 7px;
   cursor: default;

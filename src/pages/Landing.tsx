@@ -18,7 +18,7 @@ export default class Landing extends React.Component {
                         </div>
                     </div>
                     <div className='name-block'>
-                        <h1 className='name'>JACOB B.</h1>
+                        <h1 className='name'>JACOB<span className='pad'>B.</span></h1>
                     </div>
                     <div className='info-block'>
                         <div className='block-item'>
@@ -38,7 +38,7 @@ export default class Landing extends React.Component {
                     </div>
                     <div className='footer-block'>
                         <div className='email-block'>
-                        <input placeholder='Email address...' />
+                        <input placeholder='Email address...' type='email' />
                         </div>
                         <div className='empty' />
                         <div className='submit-button'>

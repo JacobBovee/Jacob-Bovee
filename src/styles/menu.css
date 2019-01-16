@@ -1,6 +1,6 @@
-.menu {
+.menu-area {
     background-color: #1e1e1e;
-    height: 40px;
+    height: 50px;
     color: #D21E1E;
     bottom: 0px;
     left: 0px;
@@ -11,6 +11,90 @@
     cursor: pointer;
 }
 
-.symbol {
-    font-size: 40px;
+.menu {
+    background-color: #1e1e1e;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 50%;
+    position: fixed;
+    z-index: 9999;
+    transition: 1s ease-in-out; 
+}
+
+.menu-items {
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.close-menu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: calc(100% - 50px);
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px #000 solid;
+}
+
+.symbol, .close-symbol {
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .symbol:hover {
+    opacity: 0.8;
+    transform: rotate(45deg);
+    transition: 0.15s ease-in-out;
+  }
+  .symbol:before, .close-symbol:before {
+    position: relative;
+    left: 15px;
+    content: ' ';
+    height: 32px;
+    width: 2px;
+    background-color: #D21E1E;
+    opacity: 0.7;
+  }
+  .symbol:after, .close-symbol:after {
+    position: relative;
+    left: 13px;
+    content: ' ';
+    height: 32px;
+    width: 2px;
+    background-color: #D21E1E;
+    opacity: 0.7;
+  }
+  .symbol:before, .close-symbol:before {
+    transform: rotate(180deg);
+  }
+  .symbol:after, .close-symbol:after {
+    transform: rotate(-90deg);
+  }
+
+.close-symbol {
+    opacity: 0.8;
+    transform: rotate(45deg);
+    transition: 0.15s ease-in-out; 
+}
+
+.menu-list {
+    list-style: none;
+    color: #D21E1E;
+    font-size: 60px;
+}
+
+.menu-list li a {
+    color: inherit;
+    text-decoration: none;
+}
+.menu-list li a:hover {
+    color: rgba(210, 30, 30, 0.7);
 }
